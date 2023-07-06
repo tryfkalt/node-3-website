@@ -11,6 +11,11 @@ console.log(path.join(__dirname, '../public'))
 //console.log(__filename)//path THE FILE is 
 
 const app = express()
+//for heroku
+const port = process.env.PORT || 3000
+
+
+
 const publicDirectoryPath = path.join(__dirname, '../public')
 
 //right now the hbs are only available and readable in views dir
@@ -148,6 +153,6 @@ app.get('*', (req, res) => {
 
 //going to turn the server on 
 // on a specific port
-app.listen(3000, () => {
-    console.log('server is up on port 3000')
+app.listen(port, () => {
+    console.log('server is up on port ' +  port)
 })

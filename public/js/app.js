@@ -34,7 +34,7 @@ weatherForm.addEventListener('submit', (e) => {
     //keep the code above 
     //doesnt let the browser refresh
 
-    let url = 'http://localhost:3000/weather?address=' + location
+    let url = '/weather?address=' + location
     
     fetch(url).then((response) => {
         console.log(response)
