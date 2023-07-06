@@ -30,7 +30,6 @@ weatherForm.addEventListener('submit', (e) => {
     const location = search.value //extracts the value of the query
     messageOne.textContent = "Loading..."
     messageTwo.textContent = ''
-
     console.log(location)
     //keep the code above 
     //doesnt let the browser refresh
